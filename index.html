@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IraCast Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <main class="container">
+    <header class="navbar">
+      <div class="logo">
+        <span>✦</span>
+        <h2>IraCast</h2>
+      </div>
+
+      <button class="unit-toggle" id="unitToggle" type="button">°F</button>
+    </header>
+
+    <section class="hero-section">
+      <div class="left-content">
+        <p class="tag">Modern Weather Dashboard</p>
+
+        <h1>Forecasts that feel calm, clear, and beautiful.</h1>
+
+        <p class="description">
+          Search any city and get live temperature, wind, humidity,
+          rain chance, sunrise time, and a clean 5-day forecast.
+        </p>
+
+        <div class="search-card">
+          <div class="search-box">
+            <input
+              type="text"
+              id="cityInput"
+              placeholder="Search city, example: Chicago"
+            />
+            <button id="searchBtn" type="button">Search</button>
+          </div>
+
+          <p id="message"></p>
+        </div>
+      </div>
+
+      <div class="weather-card">
+        <div class="weather-top">
+          <div>
+            <p class="small-title">Current Weather</p>
+            <h2 id="cityName">--</h2>
+          </div>
+
+          <p id="currentTime">--</p>
+        </div>
+
+        <div class="main-weather">
+          <div>
+            <div class="weather-icon" id="weatherIcon">☁️</div>
+            <p id="weatherText">Search for a city</p>
+          </div>
+
+          <div class="temperature-box">
+            <h3 id="temperature">--°</h3>
+            <p>Feels like <span id="feelsLike">--°</span></p>
+          </div>
+        </div>
+
+        <div class="weather-details">
+          <div class="detail-card">
+            <span>💧</span>
+            <p>Humidity</p>
+            <h4 id="humidity">--%</h4>
+          </div>
+
+          <div class="detail-card">
+            <span>💨</span>
+            <p>Wind</p>
+            <h4 id="windSpeed">-- mph</h4>
+          </div>
+
+          <div class="detail-card">
+            <span>🌧️</span>
+            <p>Rain</p>
+            <h4 id="rainChance">--%</h4>
+          </div>
+
+          <div class="detail-card">
+            <span>🌅</span>
+            <p>Sunrise</p>
+            <h4 id="sunriseTime">--</h4>
+          </div>
+        </div>
+
+        <div class="forecast-area">
+          <div class="forecast-heading">
+            <h3>5-Day Forecast</h3>
+            <p>Updated live</p>
+          </div>
+
+          <div class="forecast-list" id="forecastList"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
