@@ -34,7 +34,6 @@ Coming soon.
 
 ## Future Improvements
 
-- Add Celsius and Fahrenheit switching
 - Add current-location weather
 - Add more detailed hourly weather information
 - Improve loading and error states
